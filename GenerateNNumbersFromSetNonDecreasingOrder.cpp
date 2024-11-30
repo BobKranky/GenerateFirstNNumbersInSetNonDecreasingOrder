@@ -37,12 +37,33 @@ void generateSequence(int N) {
    std::cout << std::endl;
 }
 
-int main() {
-   int N;
-   std::cout << "Enter N: ";
-   std::cin >> N;
-   generateSequence(N);
+int main(int argc, char* argv[]) {
+  int N = 15;  // Default value
 
+  if (argc > 1)
+  {
+    try
+    {
+      N = std::stoi(argv[1]);
+      if (N < 1)
+      {
+        std::cerr << "Please provide a positive integer." << std::endl;
+        return 1;
+      }
+    }
+    catch (const std::invalid_argument& e)
+    {
+      std::cerr << "Invalid input. Please provide a valid integer." << std::endl;
+      return 1;
+    }
+    catch (const std::out_of_range& e)
+    {
+      std::cerr << "Number is too large." << std::endl;
+      return 1;
+    }
+  }
+
+   generateSequence(N);
    return 0;
 }
 // Enter N: 15
