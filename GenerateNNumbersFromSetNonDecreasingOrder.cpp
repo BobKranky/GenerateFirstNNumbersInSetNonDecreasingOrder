@@ -1,7 +1,5 @@
 // Hasan Raza
-// CPSC 3620 Assignment 3 Question 3
 // This Algorithm takes an N >= 1 from user and returns the first N digits from the set {2^n3^m | m and n are non-negative integers}
-
 
 #include <iostream>
 #include <vector>
