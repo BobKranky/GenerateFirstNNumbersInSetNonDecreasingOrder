@@ -6,6 +6,7 @@ The algorithm uses a priority queue and a set to efficiently compute and output 
 Features
 
 Accepts a positive integer N as input.
+
 Generates and displays the first N numbers in ascending order from the mathematical set.
 Ensures uniqueness of numbers using a std::set.
 Uses a min-heap (std::priority_queue) for efficient number selection in ascending order.
