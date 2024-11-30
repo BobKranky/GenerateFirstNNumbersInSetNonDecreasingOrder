@@ -3,13 +3,16 @@ Overview
 This program generates the first N numbers from the set {2^n * 3^m | m and n are non-negative integers}, where N >= 1. The set is constructed by multiplying powers of 2 and 3, and the program ensures all numbers are unique and sorted in ascending order.
 
 The algorithm uses a priority queue and a set to efficiently compute and output the desired sequence.
+
 Features
 
-Accepts a positive integer N as input.
+    Accepts a positive integer N as input.
 
-Generates and displays the first N numbers in ascending order from the mathematical set.
-Ensures uniqueness of numbers using a std::set.
-Uses a min-heap (std::priority_queue) for efficient number selection in ascending order.
+    Generates and displays the first N numbers in ascending order from the mathematical set.
+
+    Ensures uniqueness of numbers using a std::set.
+    
+    Uses a min-heap (std::priority_queue) for efficient number selection in ascending order.
 
 How It Works
 Data Structures Used:
